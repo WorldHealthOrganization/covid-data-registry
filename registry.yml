@@ -3,8 +3,8 @@ sources:
     type: case-counts
     description: Daily cumulative case and death counts at different levels of geographic resolution
     repos:
-      - https://github.com/covid-open-data/xform-casecount-jhu
-      - https://github.com/covid-open-data/xform-casecount-ecdc
-      - https://github.com/covid-open-data/xform-casecount-us-jhu
-      - https://github.com/covid-open-data/xform-casecount-us-nytimes
-      - https://github.com/covid-open-data/xform-casecount-us-usafacts
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-jhu
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-ecdc
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-jhu
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-nytimes
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-usafacts
