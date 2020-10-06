@@ -26,6 +26,8 @@ Each of the data source repositories contains its own yaml file with additional 
 
 A GitHub Action in this registry repository runs daily (defined [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/.github/workflows/mkdocs_registry.yml)) and produces a markdown document listing all of the sources and associated metadata, which is placed in the `docs` directory, [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/docs/registry.md).
 
+See the [README](scripts/mkdocs/README.md) in [scripts/mkdocs](scripts/mkdocs) for details on generating the registry markdown file.
+
 ## Schemas
 
 Schemas for the data types of sources in the registry are also stored in this registry repository in the `schemas` directory. The general assumption is that data sources will store final output data as csv files in the data source repositories, and the schema definitions in this registry are built to validate csv files.
