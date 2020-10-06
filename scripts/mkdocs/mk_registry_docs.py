@@ -44,10 +44,9 @@ class GenerateRegistry:
             print('Encountered errors. Doc not updated.')
 
     def _add_repos_to_md(self, repo_url, md_lines):
-        # Fix up the URL so the local user can SSH clone the repo from GitHub.
+        # Fix up the URL so the local user can clone the repo from GitHub.
         repo_clone_url = repo_url
         repo_clone_url = repo_clone_url + '.git'
-        repo_clone_url = repo_clone_url.replace('https://github.com/', 'git@github.com:')
 
         print('=' * 80)
         print('Processing repo: {0}'.format(repo_clone_url))
