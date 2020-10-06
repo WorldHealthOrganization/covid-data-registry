@@ -5,6 +5,5 @@ sources:
     repos:
       - https://github.com/WorldHealthOrganization/xform-covid-casecount-jhu
       - https://github.com/WorldHealthOrganization/xform-covid-casecount-ecdc
-      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-jhu
-      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-nytimes
-      - https://github.com/WorldHealthOrganization/xform-covid-casecount-us-usafacts
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-wom
+      - https://github.com/WorldHealthOrganization/xform-covid-casecount-who
