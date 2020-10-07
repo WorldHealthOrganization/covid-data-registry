@@ -1,0 +1,5 @@
+name: 'Make Registry Docs'
+description: 'Builds the registry docs.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

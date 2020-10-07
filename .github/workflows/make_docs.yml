@@ -1,5 +1,7 @@
 # Run every day at 2am Pacific
 on:
+  workflow_dispatch:
+    inputs:
   schedule:
     - cron: "0 9 * * *"
 
@@ -10,18 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Make Registry
-        run: |
-          pip3 install -U pip setuptools
-          make -C scripts/mkdocs pip_install
-          make docs_registry
+      - name: Make Docs
+        uses: ./.github/actions/make-docs
       - name: Git Push
-        run: |
-          git config --global user.email "${GIT_EMAIL:-SYSTEM@users.noreply.github.com}"
-          git config --global user.name "${GIT_NAME:-SYSTEM}"
-          git add docs
-          git commit -m "Auto commit: $(date)"
-          git push
+          uses: ./.github/actions/git-push
+          with:
+            push-dir: 'docs'
       - name: Failure Notification
         if: failure()
         run: |

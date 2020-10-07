@@ -24,9 +24,9 @@ sources:
 
 Each of the data source repositories contains its own yaml file with additional metadata about the source.
 
-A GitHub Action in this registry repository runs daily (defined [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/.github/workflows/mkdocs_registry.yml)) and produces a markdown document listing all of the sources and associated metadata, which is placed in the `docs` directory, [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/docs/registry.md).
+A GitHub Action in this registry repository runs daily (defined [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/.github/workflows/make_docs.yml)) and produces a markdown document listing all of the sources and associated metadata, which is placed in the `docs` directory, [here](https://github.com/WorldHealthOrganization/covid-data-registry/blob/master/docs/registry.md).
 
-See the [README](scripts/mkdocs/README.md) in [scripts/mkdocs](scripts/mkdocs) for details on generating the registry markdown file.
+See the [README](scripts/make-docs/README.md) in [scripts/make-docs](scripts/make-docs) for details on generating the registry markdown file.
 
 ## Schemas
 
