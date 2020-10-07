@@ -15,9 +15,9 @@ jobs:
       - name: Make Docs
         uses: ./.github/actions/make-docs
       - name: Git Push
-          uses: ./.github/actions/git-push
-          with:
-            push-dir: 'docs'
+        uses: ./.github/actions/git-push
+        with:
+          push-dir: 'docs'
       - name: Failure Notification
         if: failure()
         run: |
